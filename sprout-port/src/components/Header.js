@@ -3,11 +3,15 @@ import Nav from "./Nav";
 
 function Header() {
     return (
-        <div>
+        <header>
             <h1> Emily Bennett</h1>
             <Nav />
-        </div>
+        </header>
     );
 }
 
 export default Header;
+
+
+//improvements
+//add small logo 
