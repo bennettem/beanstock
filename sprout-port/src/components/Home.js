@@ -2,13 +2,14 @@ import React from "react";
 
 function Home () {
     return (
-        <div>
-            <h1> Home page</h1>
+        <section className="home">
+        <div className="title">
+            <h2>Welcome 🥳</h2>
+            <p> Feel free to explore</p>
         </div>
-    )
+        </section>
+    );
 }
 
 export default Home;
 
-//improvements
-// add summary, projects, photo? (might leave that in about section) 

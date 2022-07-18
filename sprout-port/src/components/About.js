@@ -3,12 +3,14 @@ import photo from "../images/about2.jpg"
 
 function About () {
     return (
-        <div>
+        <section>
+        <div className="aboutMe">
             <h1>About me</h1>
-            <p> ** small description place holder: abcdefghijklmnopqrstuvwxyz **
+            <p> Hi there! I'm Emily currently on the journey of becoming a software developer. 
             </p>
             <img src={photo} alt="" />
         </div>
+        </section>
     );
 }
 

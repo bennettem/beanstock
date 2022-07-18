@@ -1,15 +1,25 @@
 import React from "react";
+// import { capitalizeFirstLetter } from "../utils/helpers";
 
 
+function Nav (props) {
 
-function Nav () {
+    const pages = ["Home", "About", "Portfolio", "Contact", "Resume"]
     return (
-        <div>
-            <a href="/Home">About Me</a>
-            <a href="/Portfolio">Portfolio</a>
-            <a href="/Contact">Contact Me</a>
-            <a href="/Resume">Resume</a>
-        </div>
+<nav>
+    <ul>
+        {pages.map(pages => (
+            <li key={pages}>
+                <a href={"#" + pages.toLowerCase()}
+                onClick={() => props.handlePage(pages)}
+                className={
+                    props.currentPage === pages ? "nav-link active" : "nav-link"
+                } > {pages}
+                </a>
+            </li>
+        ))}
+    </ul>
+</nav>
     );
 }
 
